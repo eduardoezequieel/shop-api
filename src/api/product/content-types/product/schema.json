@@ -28,12 +28,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "cart": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::cart.cart",
-      "inversedBy": "products"
     }
   }
 }

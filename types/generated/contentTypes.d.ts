@@ -409,11 +409,6 @@ export interface ApiProductProduct extends Schema.CollectionType {
     description: Attribute.Text;
     price: Attribute.Decimal;
     image: Attribute.Media;
-    cart: Attribute.Relation<
-      'api::product.product',
-      'manyToOne',
-      'api::cart.cart'
-    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
